@@ -1,0 +1,44 @@
+import { useScroll, useTransform, motion } from "framer-motion";
+import Image from "next/image";
+import { useRef } from "react";
+
+export default function Project({ project }: { project: any }) {
+  const wrapper = useRef<HTMLDivElement | null>(null);
+  const { scrollYProgress } = useScroll({
+    target: wrapper,
+    offset: ["start end", "end end"],
+  });
+
+  const textDisappear = useTransform(scrollYProgress, (pos) =>
+    pos >= 1 ? 0 : 1
+  );
+  return (
+    <div
+      ref={wrapper}
+      style={{ background: project.bgColor }}
+      className="h-screen w-screen flex relative p-16"
+    >
+      <div className="flex flex-col">
+        <h1
+          data-aos="fade-right"
+          className="text-6xl text-left text-white drop-shadow-lg shadow-black font-bold"
+        >
+          {project.name}
+        </h1>
+        <div className="grid grid-cols-2">
+          {project.images.map((image: any, i: any) => (
+            <Image
+              key={i}
+              src={image}
+              width={1024}
+              height={1024}
+              alt=""
+              style={{ boxShadow: "0px 0px 16px black" }}
+              className="mt-12 "
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
