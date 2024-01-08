@@ -1,3 +1,2 @@
-# porftolio
+(wesiu.dev)[https://wesiu.dev]
 portfolio wesiu.dev
-todo readme - it was a long night
