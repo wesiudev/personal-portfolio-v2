@@ -6,8 +6,8 @@ import Projects from "../components/Projects";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AboutMe from "../components/AboutMe";
-
+import AboutCMS from "../components/AboutCMS";
+import About from "../components/AboutCMS";
 export default async function IndexPage() {
   useEffect(() => {
     AOS.init({
@@ -26,7 +26,7 @@ export default async function IndexPage() {
       <NavLeft />
       <NavRight />
       <Projects />
-      <AboutMe />
+      <About />
     </div>
   );
 }

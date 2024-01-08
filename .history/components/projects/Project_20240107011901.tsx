@@ -81,7 +81,7 @@ export default function Project({
               height={1024}
               alt=""
               style={{ boxShadow: "0px 0px 16px black" }}
-              className="cursor-pointer w-full rounded-xl"
+              className="cursor-pointer w-full"
               onClick={() => {
                 setOpenedImages(project.images), setSelectedItem(i);
               }}

@@ -6,8 +6,8 @@ import Projects from "../components/Projects";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AboutMe from "../components/AboutMe";
-
+import AboutCMS from "../components/AboutCMS";
+import About from "../components/AboutCMS";
 export default async function IndexPage() {
   useEffect(() => {
     AOS.init({
@@ -16,7 +16,7 @@ export default async function IndexPage() {
   }, []);
   return (
     <div className="relative h-max">
-      <div className="absolute left-6 lg:left-12 top-12 z-[250] flex flex-row items-center justify-center">
+      <div className="fixed left-6 lg:left-12 top-12 z-[250] flex flex-row items-center justify-center">
         <h2 className="italic font-bold text-2xl text-white drop-shadow-md shadow-black">
           wesiu.
           <span className=" text-green-600">dev</span>
@@ -26,7 +26,7 @@ export default async function IndexPage() {
       <NavLeft />
       <NavRight />
       <Projects />
-      <AboutMe />
+      <About />
     </div>
   );
 }

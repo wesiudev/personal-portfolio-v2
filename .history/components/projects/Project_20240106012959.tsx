@@ -15,7 +15,7 @@ export default function Project({
   return (
     <div
       style={{ background: project.bgColor }}
-      className={`min-h-screen flex relative p-6 py-12 lg:p-12 !z-0 ${
+      className={`min-h-screen flex relative p-6 py-12 lg:p-12 xl:p-16 !z-0 ${
         project.contrast ? "text-zinc-800" : "text-white"
       }`}
     >
@@ -81,7 +81,7 @@ export default function Project({
               height={1024}
               alt=""
               style={{ boxShadow: "0px 0px 16px black" }}
-              className="cursor-pointer w-full rounded-xl"
+              className="cursor-pointer w-full"
               onClick={() => {
                 setOpenedImages(project.images), setSelectedItem(i);
               }}

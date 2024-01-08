@@ -46,7 +46,7 @@ export default function Project({
         <div
           data-aos="fade"
           data-aos-delay="500"
-          className={`flex flex-col w-[90vw] rounded-xl px-3 p-2 lg:w-max mt-3 ${
+          className={`flex flex-col w-[90vw] rounded-xl p-2 lg:w-max mt-3 ${
             project.contrast
               ? "bg-white bg-opacity-50"
               : "bg-black bg-opacity-30"
@@ -81,7 +81,7 @@ export default function Project({
               height={1024}
               alt=""
               style={{ boxShadow: "0px 0px 16px black" }}
-              className="cursor-pointer w-full rounded-xl"
+              className="cursor-pointer w-full"
               onClick={() => {
                 setOpenedImages(project.images), setSelectedItem(i);
               }}
