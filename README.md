@@ -1,7 +1,6 @@
 [wesiu.dev](https://wesiu.dev)
 # portfolio wesiu.dev
 
-## Nextjs, Framer Motion, AOS
+> Nextjs, Framer Motion, AOS
 
-## npm i
-## npm run dev
+ npm i -> npm run dev
