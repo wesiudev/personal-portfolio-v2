@@ -56,10 +56,10 @@ export default function ProjectShowcase() {
           {projects.map((item: any, i: any) => (
             <div
               key={i}
-              className="h-max my-12 lg:my-0 flex items-center duration-75 px-6 lg:px-12"
+              className="min-h-screen lg:my-0 flex items-center duration-75 px-6 lg:px-12"
             >
               <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-3 h-max">
-                <div className="">
+                <div data-aos="fade-right" className="">
                   <Image
                     style={{ boxShadow: "0px 0px 6px black" }}
                     src={item.images[0]}
@@ -70,6 +70,7 @@ export default function ProjectShowcase() {
                   />
                 </div>
                 <div
+                  data-aos="fade-left"
                   className="italic mt-4 lg:mt-0 text-white bg-slate-800 bg-opacity-70 overflow-hidden rounded-xl min-h-full"
                   style={{
                     boxShadow: "0px 0px 6px black",
