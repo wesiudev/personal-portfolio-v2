@@ -6,7 +6,7 @@ import Link from "next/link";
 export const NavRight: React.FC = () => {
   const ScrollTo = Scroll.Link;
   return (
-    <div className="text-gray-300 lg:flex hidden fixed right-12 top-12 flex-col-reverse lg:flex-row lg:space-x-3 z-[590] font-regular text-xl">
+    <div className="text-gray-300 lg:flex hidden fixed right-12 top-12 flex-col-reverse lg:flex-row lg:space-x-3 z-[250] font-regular text-xl">
       <ScrollTo
         to="projects"
         smooth={true}
@@ -23,14 +23,10 @@ export const NavRight: React.FC = () => {
           </div>
         </div>
       </ScrollTo>
-      <ScrollTo
-        to="about"
-        smooth={true}
-        duration={500}
-        delay={200}
+      <button
         data-aos="fade-down"
         data-aos-delay={2800}
-        className="group h-max overflow-hidden cursor-pointer flex flex-row items-center"
+        className=" flex flex-row items-center group overflow-hidden"
       >
         <div className="relative group-hover:text-white duration-200 ">
           <div className="absolute -left-[120%] group-hover:-left-0 duration-300 ease-in-out top-0 h-full w-full bg-green-600"></div>
@@ -38,7 +34,7 @@ export const NavRight: React.FC = () => {
             About
           </div>
         </div>
-      </ScrollTo>
+      </button>
     </div>
   );
 };

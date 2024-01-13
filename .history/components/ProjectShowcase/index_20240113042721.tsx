@@ -143,8 +143,6 @@ export default function ProjectShowcase() {
                       ))}
                       <Link
                         href={item.link}
-                        target="_blank"
-                        title="Visit page"
                         className="flex flex-row items-center mt-3  text-base lg:text-xl"
                       >
                         <div className="rounded-full h-3 w-3 bg-green-400 mr-2" />

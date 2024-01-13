@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import { useScroll, useTransform, motion as motionDiv } from "framer-motion";
 import Image from "next/image";
 import MyStory from "../MyStory";
-import Link from "next/link";
 export default function ProjectShowcase() {
   const mainWrapper = useRef<any>();
   const { scrollYProgress } = useScroll({
@@ -141,15 +140,6 @@ export default function ProjectShowcase() {
                           ))}
                         </div>
                       ))}
-                      <Link
-                        href={item.link}
-                        target="_blank"
-                        title="Visit page"
-                        className="flex flex-row items-center mt-3  text-base lg:text-xl"
-                      >
-                        <div className="rounded-full h-3 w-3 bg-green-400 mr-2" />
-                        Visit Page
-                      </Link>
                     </div>
                   </div>
                 </div>

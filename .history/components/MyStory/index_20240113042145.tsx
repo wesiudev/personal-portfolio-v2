@@ -1,11 +1,6 @@
-import Link from "next/link";
-
 export default function MyStory() {
   return (
-    <div
-      id="about"
-      className="w-screen flex flex-col items-center text-center relative z-0 min-h-screen mt-[50vh]"
-    >
+    <div className="w-screen flex flex-col items-center text-center relative z-0 h-max mt-[50vh]">
       <h2 className="text-[#F7E11F] text-7xl text-center font-bold w-max mx-auto">
         My Story
       </h2>
@@ -27,12 +22,9 @@ export default function MyStory() {
         concentrating on a JavaScript library - React.
       </p>
       <p className="text-[#F7E11F] text-2xl w-[80vw] lg:w-[70vw] xl:w-[60vw] mt-6">
-        This led me to meet my{" "}
-        <Link title="Visit page" target="_blank" href="https://sebster.dev">
-          mentor
-        </Link>
-        , an experienced professional who not only reviewed my code but also
-        presented me with exciting challenges that helped me improve.
+        This led me to meet my mentor, an experienced professional who not only
+        reviewed my code but also presented me with exciting challenges that
+        helped me improve.
       </p>
       <p className="text-[#F7E11F] text-2xl w-[80vw] lg:w-[70vw] xl:w-[60vw] mt-6">
         With new skills and a collection of projects, I made the intentional
