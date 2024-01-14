@@ -6,7 +6,7 @@ import Link from "next/link";
 export const NavRight: React.FC = () => {
   const ScrollTo = Scroll.Link;
   return (
-    <div className="text-gray-300 lg:flex hidden fixed right-12 top-12 flex-col-reverse lg:flex-row lg:space-x-3 z-[601] font-regular text-xl">
+    <div className="text-gray-300 lg:flex hidden fixed right-12 top-12 flex-col-reverse lg:flex-row lg:space-x-3 z-[590] font-regular text-xl">
       <ScrollTo
         to="projects"
         smooth={true}
