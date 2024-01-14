@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaCode, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaCode, FaEnvelope, FaGithub, FaPhone } from "react-icons/fa";
 
 export default function MyStory() {
   return (

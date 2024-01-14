@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaCode, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaPhone } from "react-icons/fa";
 
 export default function MyStory() {
   return (
@@ -51,10 +51,8 @@ export default function MyStory() {
             <Link
               href="https://github.com/wesiudev/personal-portfolio-v2"
               className="flex flex-row items-center mx-auto w-max"
-              title={`Source code of portfolio`}
-              target="_blank"
             >
-              <FaCode className="mr-2 h-7 w-7" />
+              <FaGithub className="mr-2 h-7 w-7" />
               Portfolio source code
             </Link>
           </div>

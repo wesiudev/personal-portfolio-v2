@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import { useScroll, useTransform, motion as motionDiv } from "framer-motion";
 import Image from "next/image";

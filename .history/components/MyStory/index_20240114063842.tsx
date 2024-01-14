@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaCode, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 export default function MyStory() {
   return (
@@ -47,17 +47,7 @@ export default function MyStory() {
             With new skills and a collection of projects, I made the choice to
             look for a job in my chosen field.
           </p>
-          <div className="w-full flex items-center text-center">
-            <Link
-              href="https://github.com/wesiudev/personal-portfolio-v2"
-              className="flex flex-row items-center mx-auto w-max"
-              title={`Source code of portfolio`}
-              target="_blank"
-            >
-              <FaCode className="mr-2 h-7 w-7" />
-              Portfolio source code
-            </Link>
-          </div>
+          <Link href=></Link>
         </div>
         <div className="text-white font-light text-xl italic h-screen flex flex-col items-center justify-center">
           <div className="h-max w-max group">
