@@ -33,7 +33,7 @@ export const NavRight: React.FC = () => {
         className="group h-max overflow-hidden cursor-pointer flex flex-row items-center"
       >
         <div className="relative group-hover:text-white duration-200 ">
-          <div className="absolute -left-[120%] group-hover:-left-0 duration-300 ease-in-out top-0 h-full w-full bg-yellow-300"></div>
+          <div className="absolute -left-[120%] group-hover:-left-0 duration-300 ease-in-out top-0 h-full w-full bg-yellow-400"></div>
           <div className="z-[50] relative font-light bg-black bg-opacity-30  px-2">
             About
           </div>
