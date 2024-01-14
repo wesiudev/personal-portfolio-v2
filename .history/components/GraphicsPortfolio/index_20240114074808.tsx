@@ -184,7 +184,7 @@ const GraphicsPortfolio: React.FC = () => {
         }}
         className="font-bold bottom-36 text-center w-[90%] md:w-[70%] lg:w-[60%] left-1/2 fixed z-[500] font-sans"
       >
-        <span className="bg-yellow-300 select-none leading-[1.2] px-1 text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+        <span className="bg-yellow-300 select-none leading-[1.2] px-1 text-3xl lg:text-4xl 2xl:text-5xl">
           I have expertise in JavaScript programming and a desire to learn 3D
           graphics.
         </span>

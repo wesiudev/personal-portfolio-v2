@@ -2,11 +2,30 @@ import Image from "next/image";
 import { useState } from "react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
-export default function ProjectImages({ images }: { images: any }) {
+export default function ProjectImages({
+  images,
+  colors,
+}: {
+  images: any;
+  colors?: any;
+}) {
   const [currentImage, setCurrentImage] = useState(0);
   return (
     <div className="flex flex-col">
       <div className="relative h-max">
+        {/* {colors && (
+          <div className="z-50 h-max flex flex-row space-x-2 lg:space-x-4 bottom-[-44px] left-1/2 -translate-x-1/2 absolute bg-black bg-opacity-60 p-1.5">
+            {colors.map((color: any, i: number) => (
+              <li key={i} className="flex flex-row items-center">
+                <div
+                  style={{ background: `${color}` }}
+                  className={`lg:h-8 h-7 lg:w-8 w-7 mr-2`}
+                ></div>
+                <span className="not-italic text-white">{color}</span>
+              </li>
+            ))}
+          </div>
+        )} */}
         <div className="relative w-full min-h-full">
           <div className="z-50 absolute left-4 lg:left-8 top-3 bg-black bg-opacity-50 text-white px-1.5 rounded-md text-sm">
             {currentImage + 1 + "/" + images.length}

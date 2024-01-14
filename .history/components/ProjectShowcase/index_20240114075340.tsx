@@ -63,26 +63,10 @@ export default function ProjectShowcase() {
                   </h2>
                   <div className="p-3">
                     <p className="text-gray-400 my-2 not-italic">{item.type}</p>
+
                     <p className="text-lg lg:text-xl xl:text-2xl not-italic">
                       {item.shortDescription}
-                    </p>{" "}
-                    <h2 className="font-bold text-lg lg:text-xl xl:text-2xl mt-3 lg:mt-1.5 xl:mt-3">
-                      Colors
-                    </h2>
-                    <div className="z-50 h-max flex flex-row -ml-2 lg:-ml-4 mt-3">
-                      {item.colors.map((color: any, i: number) => (
-                        <li
-                          key={i}
-                          className="flex flex-row items-center ml-2 lg:ml-4 flex-wrap"
-                        >
-                          <div
-                            style={{ background: `${color}` }}
-                            className={`lg:h-8 h-7 lg:w-8 w-7 mr-2`}
-                          ></div>
-                          <span className="not-italic text-white">{color}</span>
-                        </li>
-                      ))}
-                    </div>
+                    </p>
                     <h2 className="font-bold text-lg lg:text-xl xl:text-2xl mt-3 lg:mt-1.5 xl:mt-3">
                       Stack
                     </h2>
@@ -102,6 +86,7 @@ export default function ProjectShowcase() {
                     <p className="text-sm lg:text-base xl:text-lg">
                       {item.structure}
                     </p>
+
                     <h2 className="font-bold text-lg lg:text-xl xl:text-2xl mt-3 lg:mt-1.5 xl:mt-3">
                       Fonts
                     </h2>
@@ -126,6 +111,7 @@ export default function ProjectShowcase() {
                         </div>
                       ))}
                     </div>
+
                     <div className="mt-3 flex flex-row items-center space-x-4 not-italic">
                       <Link
                         title={`Source code of ${item.name}`}
@@ -144,6 +130,21 @@ export default function ProjectShowcase() {
                         <FaLink className="mr-2 h-6 w-6" />
                         Visit Page
                       </Link>
+                    </div>
+
+                    <div className="z-50 h-max flex flex-row -ml-2 lg:-ml-4 mt-3">
+                      {item.colors.map((color: any, i: number) => (
+                        <li
+                          key={i}
+                          className="flex flex-row items-center ml-2 lg:ml-4 flex-wrap"
+                        >
+                          <div
+                            style={{ background: `${color}` }}
+                            className={`lg:h-8 h-7 lg:w-8 w-7 mr-2`}
+                          ></div>
+                          <span className="not-italic text-white">{color}</span>
+                        </li>
+                      ))}
                     </div>
                   </div>
                 </div>

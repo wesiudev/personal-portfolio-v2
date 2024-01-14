@@ -2,7 +2,13 @@ import Image from "next/image";
 import { useState } from "react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
-export default function ProjectImages({ images }: { images: any }) {
+export default function ProjectImages({
+  images,
+  colors,
+}: {
+  images: any;
+  colors?: any;
+}) {
   const [currentImage, setCurrentImage] = useState(0);
   return (
     <div className="flex flex-col">

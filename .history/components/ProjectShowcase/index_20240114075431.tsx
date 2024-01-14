@@ -66,9 +66,6 @@ export default function ProjectShowcase() {
                     <p className="text-lg lg:text-xl xl:text-2xl not-italic">
                       {item.shortDescription}
                     </p>{" "}
-                    <h2 className="font-bold text-lg lg:text-xl xl:text-2xl mt-3 lg:mt-1.5 xl:mt-3">
-                      Colors
-                    </h2>
                     <div className="z-50 h-max flex flex-row -ml-2 lg:-ml-4 mt-3">
                       {item.colors.map((color: any, i: number) => (
                         <li

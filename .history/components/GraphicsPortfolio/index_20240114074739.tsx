@@ -172,7 +172,7 @@ const GraphicsPortfolio: React.FC = () => {
         }}
         className="font-bold top-36 left-[-30px] sm:left-0 fixed z-[500] font-sans"
       >
-        <span className="bg-yellow-300 select-none px-1 text-[38px] sm:text-[5xl] lg:text-7xl xl:text-8xl w-max">
+        <span className="bg-yellow-300 select-none px-1 text-[38px] lg:text-7xl xl:text-8xl w-max">
           Creative Developer
         </span>
       </motionDiv.h1>
