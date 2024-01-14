@@ -62,9 +62,9 @@ export default function ProjectImages({
               width={1366}
               height={786}
               alt=""
-              className={`${i === 0 && "relative"} ${
-                i === currentImage ? "opacity-100" : "opacity-0"
-              } duration-200 w-full h-auto rounded-xl absolute left-0 top-0`}
+              className={`${
+                i === 0 && "relative"
+              } w-full h-auto rounded-xl absolute left-0 top-0`}
             />
           ))}
         </div>

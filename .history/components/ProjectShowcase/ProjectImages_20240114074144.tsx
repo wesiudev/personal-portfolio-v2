@@ -13,6 +13,10 @@ export default function ProjectImages({
   return (
     <div className="flex flex-col">
       <div className="relative h-max">
+        <div className="absolute left-4 lg:left-8 top-3 bg-black bg-opacity-50 text-white px-1.5 rounded-md text-sm">
+          {currentImage + 1 + "/" + images.length}
+        </div>
+
         {colors && (
           <div className="h-max flex flex-row space-x-2 lg:space-x-4 bottom-3 left-1/2 -translate-x-1/2 absolute bg-black bg-opacity-60 p-1.5">
             {colors.map((color: any, i: number) => (
@@ -27,9 +31,6 @@ export default function ProjectImages({
           </div>
         )}
         <div className="relative w-full min-h-full">
-          <div className="z-50 absolute left-4 lg:left-8 top-3 bg-black bg-opacity-50 text-white px-1.5 rounded-md text-sm">
-            {currentImage + 1 + "/" + images.length}
-          </div>
           <div className="z-50 absolute top-1/2 -translate-y-1/2 h-max w-full px-4 lg:px-8 flex justify-between items-center">
             <button
               onClick={() =>
@@ -62,9 +63,9 @@ export default function ProjectImages({
               width={1366}
               height={786}
               alt=""
-              className={`${i === 0 && "relative"} ${
-                i === currentImage ? "opacity-100" : "opacity-0"
-              } duration-200 w-full h-auto rounded-xl absolute left-0 top-0`}
+              className={`${
+                i === 0 && "relative"
+              } w-full h-auto rounded-xl absolute left-0 top-0`}
             />
           ))}
         </div>
