@@ -53,7 +53,7 @@ export default function ProjectShowcase() {
               className="relative h-max py-3 lg:py-24 my-12 lg:my-0 flex items-center duration-75 px-6 lg:px-12"
             >
               <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-3 h-max">
-                <ProjectImages images={item.images} colors={item.colors} />
+                <ProjectImages images={item.images} />
                 <div
                   className="italic mt-4 lg:mt-0 text-white bg-slate-800 bg-opacity-70 overflow-hidden rounded-xl min-h-full"
                   style={{

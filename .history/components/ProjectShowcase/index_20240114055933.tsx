@@ -6,9 +6,8 @@ import MyStory from "../MyStory";
 import Link from "next/link";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
-import ProjectImages from "./ProjectImages";
-import AdminPanel from "./AdminPanel";
 export default function ProjectShowcase() {
+  const [currentImage, setCurrentImage] = useState({ project: "", index: 0 });
   const mainWrapper = useRef<any>();
   const { scrollYProgress } = useScroll({
     target: mainWrapper,
@@ -53,7 +52,53 @@ export default function ProjectShowcase() {
               className="relative h-max py-3 lg:py-24 my-12 lg:my-0 flex items-center duration-75 px-6 lg:px-12"
             >
               <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-3 h-max">
-                <ProjectImages images={item.images} colors={item.colors} />
+                <div className="flex flex-col">
+                  <div className="relative h-max">
+                    <div className="absolute top-1/2 -translate-y-1/2 h-max w-full px-4 lg:px-8 flex justify-between items-center">
+                      <SlArrowLeft className="text-white font-bold" />
+                      <SlArrowRight className="text-white font-bold" />
+                    </div>
+                    <div className="h-max flex flex-row space-x-2 lg:space-x-4 bottom-3 left-1/2 -translate-x-1/2 absolute bg-black bg-opacity-60 p-1.5">
+                      {item.colors.map((color: any, i: number) => (
+                        <li key={i} className="flex flex-row items-center">
+                          <div
+                            style={{ background: `${color}` }}
+                            className={`lg:h-8 h-7 lg:w-8 w-7 mr-2`}
+                          ></div>
+                          <span className="not-italic text-white">{color}</span>
+                        </li>
+                      ))}
+                    </div>
+                    {item.images.map((image: any, i: any) => (
+                      <>
+                        {currentImage.index === i &&
+                          currentImage.project === item.name && (
+                            <Image
+                              key={i}
+                              style={{ boxShadow: "0px 0px 6px black" }}
+                              src={image}
+                              width={512}
+                              height={512}
+                              alt=""
+                              className="w-full h-auto rounded-xl"
+                            />
+                          )}
+                      </>
+                    ))}
+                    {currentImage.index === 0 &&
+                      currentImage.project === "" && (
+                        <Image
+                          key={i}
+                          style={{ boxShadow: "0px 0px 6px black" }}
+                          src={item.images[0]}
+                          width={512}
+                          height={512}
+                          alt=""
+                          className="w-full h-auto rounded-xl"
+                        />
+                      )}
+                  </div>
+                </div>
                 <div
                   className="italic mt-4 lg:mt-0 text-white bg-slate-800 bg-opacity-70 overflow-hidden rounded-xl min-h-full"
                   style={{
@@ -137,7 +182,6 @@ export default function ProjectShowcase() {
               </div>
             </div>
           ))}
-          <AdminPanel />
         </div>
         <MyStory />
       </div>
