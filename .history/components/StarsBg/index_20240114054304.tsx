@@ -26,8 +26,8 @@ function Stars(props: any) {
     random.inSphere(new Float32Array(3000), { radius: 5 })
   );
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 55;
-    ref.current.rotation.y -= delta / 35;
+    ref.current.rotation.x -= delta / 35;
+    ref.current.rotation.y -= delta / 25;
   });
   return (
     <group rotation={[0, 0, Math.PI / 4]}>

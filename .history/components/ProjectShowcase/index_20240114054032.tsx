@@ -4,7 +4,7 @@ import { useScroll, useTransform, motion as motionDiv } from "framer-motion";
 import Image from "next/image";
 import MyStory from "../MyStory";
 import Link from "next/link";
-import { FaGithub, FaLink } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 export default function ProjectShowcase() {
   const mainWrapper = useRef<any>();
   const { scrollYProgress } = useScroll({
@@ -130,12 +130,12 @@ export default function ProjectShowcase() {
                         </div>
                       ))}
                     </div>
-                    <div className="mt-3 flex flex-row items-center space-x-4 not-italic">
+                    <div className="mt-3 flex flex-row items-center space-x-4">
                       <Link
                         title={`Source code of ${item.name}`}
                         target="_blank"
                         href={item.sourceCode}
-                        className="flex flex-row items-center"
+                        className="flex flex-row items-center not-italic"
                       >
                         <FaGithub className="mr-2 h-7 w-7" /> Source code
                       </Link>
@@ -143,9 +143,9 @@ export default function ProjectShowcase() {
                         href={item.link}
                         target="_blank"
                         title="Visit page"
-                        className="flex flex-row items-center"
+                        className="flex flex-row items-center text-base lg:text-xl"
                       >
-                        <FaLink className="mr-2 h-6 w-6" />
+                        <div className="rounded-full h-3 w-3 bg-green-400 mr-1" />
                         Visit Page
                       </Link>
                     </div>

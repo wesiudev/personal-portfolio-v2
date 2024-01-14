@@ -4,7 +4,7 @@ import { useScroll, useTransform, motion as motionDiv } from "framer-motion";
 import Image from "next/image";
 import MyStory from "../MyStory";
 import Link from "next/link";
-import { FaGithub, FaLink } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 export default function ProjectShowcase() {
   const mainWrapper = useRef<any>();
   const { scrollYProgress } = useScroll({
@@ -47,7 +47,7 @@ export default function ProjectShowcase() {
           {projects.map((item: any, i: any) => (
             <div
               key={i}
-              className="relative h-max py-3 lg:py-24 my-12 lg:my-0 flex items-center duration-75 px-6 lg:px-12"
+              className="h-max py-3 lg:py-24 my-12 lg:my-0 flex items-center duration-75 px-6 lg:px-12"
             >
               <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-3 h-max">
                 <div className="relative ">
@@ -80,9 +80,21 @@ export default function ProjectShowcase() {
                   <h2 className="bg-yellow-300 w-full p-2 text-center mx-auto lg:mx-0 text-black font-sans font-bold text-2xl lg:text-3xl xl:text-5xl drop-shadow-md shadow-black px-1">
                     {item.name}
                   </h2>
-                  <div className="p-3">
-                    <p className="text-gray-400 my-2 not-italic">{item.type}</p>
-
+                  <div className="p-3 relative">
+                    <div className="flex flex-row items-center justify-between w-full">
+                      <p className="text-gray-400 my-2 not-italic">
+                        {item.type}
+                      </p>
+                      <Link
+                        href={item.link}
+                        target="_blank"
+                        title="Visit page"
+                        className="flex flex-row items-center text-base lg:text-xl"
+                      >
+                        <div className="rounded-full h-3 w-3 bg-green-400 mr-1" />
+                        Visit Page
+                      </Link>
+                    </div>
                     <p className="text-lg lg:text-xl xl:text-2xl not-italic">
                       {item.shortDescription}
                     </p>
@@ -130,23 +142,12 @@ export default function ProjectShowcase() {
                         </div>
                       ))}
                     </div>
-                    <div className="mt-3 flex flex-row items-center space-x-4 not-italic">
+                    <div className="mt-3 absolute left-0 bottom-0">
                       <Link
-                        title={`Source code of ${item.name}`}
-                        target="_blank"
                         href={item.sourceCode}
-                        className="flex flex-row items-center"
+                        className="flex flex-row items-center not-italic"
                       >
                         <FaGithub className="mr-2 h-7 w-7" /> Source code
-                      </Link>
-                      <Link
-                        href={item.link}
-                        target="_blank"
-                        title="Visit page"
-                        className="flex flex-row items-center"
-                      >
-                        <FaLink className="mr-2 h-6 w-6" />
-                        Visit Page
                       </Link>
                     </div>
                   </div>

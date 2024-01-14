@@ -130,7 +130,7 @@ export default function ProjectShowcase() {
                         </div>
                       ))}
                     </div>
-                    <div className="mt-3 flex flex-row items-center space-x-4 not-italic">
+                    <div className="h-full items-end flex flex-row justify-end space-x-4 not-italic">
                       <Link
                         title={`Source code of ${item.name}`}
                         target="_blank"
