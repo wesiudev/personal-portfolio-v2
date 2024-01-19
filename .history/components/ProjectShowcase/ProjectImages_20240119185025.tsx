@@ -11,7 +11,7 @@ export default function ProjectImages({ images }: { images: any }) {
           <div className="z-50 absolute left-4 lg:left-8 top-3 bg-black bg-opacity-50 text-white px-1.5 rounded-md text-sm">
             {currentImage + 1 + "/" + images.length}
           </div>
-          <div className="group-hover:opacity-100 opacity-0 duration-300 z-50 absolute top-1/2 -translate-y-1/2 h-max w-full px-4 lg:px-8 flex justify-between items-center">
+          <div className="group-hover:opacity-100 opacity-0 z-50 absolute top-1/2 -translate-y-1/2 h-max w-full px-4 lg:px-8 flex justify-between items-center">
             <button
               onClick={() =>
                 setCurrentImage(
