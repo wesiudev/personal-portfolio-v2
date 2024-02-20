@@ -8,7 +8,7 @@ export function NavRight() {
   const ScrollTo = Scroll.Link;
   const pathname = usePathname();
   return (
-    <div className="text-gray-300 fixed right-6 lg:right-12 top-12 flex flex-row space-x-3 z-[601] font-regular text-xl">
+    <div className="text-gray-300 fixed right-12 top-12 flex flex-row space-x-3 z-[601] font-regular text-xl">
       {pathname !== "/about" && (
         <ScrollTo
           to="projects"
