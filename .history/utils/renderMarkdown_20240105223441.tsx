@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { polishToEnglish } from "./polishToEnglish";
-
+import { polishToEnglish } from "@/app/utils/polishToEnglish";
 export const parseMarkdown = (input: any) => {
   // Basic Markdown parsing logic
   const lines = input.split("\n");

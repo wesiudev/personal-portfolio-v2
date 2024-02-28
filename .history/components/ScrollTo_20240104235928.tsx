@@ -2,7 +2,7 @@
 import * as Scroll from "react-scroll";
 import { Section } from "@/types";
 import { FaLink } from "react-icons/fa";
-import { polishToEnglish } from "@/utils/polishToEnglish";
+import { polishToEnglish } from "@/app/utils/polishToEnglish";
 
 export default function ScrollTo({ section }: { section: Section }) {
   let ScrollTo = Scroll.Link;
