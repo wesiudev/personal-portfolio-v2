@@ -1,5 +1,7 @@
 "use client";
-
+import { renderMarkdown } from "@/app/utils/parseMarkdown";
+import { polishToEnglish } from "@/app/utils/polishToEnglish";
+import { updateBlogPost } from "@/firebase";
 import Link from "next/link";
 import { useState } from "react";
 import { FaLink, FaLongArrowAltLeft, FaTrash } from "react-icons/fa";
@@ -10,9 +12,6 @@ import EditSection from "./EditSection";
 import { EditorState } from "draft-js";
 import SectionContentEditor from "../new/PostSections/SectionContentEditor";
 import SectionsList from "../new/PostSections/SectionsList";
-import { polishToEnglish } from "@/utils/polishToEnglish";
-import { renderMarkdown } from "@/utils/parseMarkdown";
-import { updateBlogPost } from "@/firebase";
 export default function EditPost({
   selectedPost,
   setSelectedPost,
