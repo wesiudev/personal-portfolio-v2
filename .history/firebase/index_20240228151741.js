@@ -33,6 +33,12 @@ const storage = getStorage(app);
 
 const analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
 
+async function getUsers() {
+  const ref = collection(db, "users");
+  const response = await getDocs(ref);
+  const users = response.docs.map((doc) => doc.data());
+  return users;
+}
 async function getDocument(collectionName, key) {
   const docRef = doc(db, collectionName, key);
   const docSnapshot = await getDoc(docRef);
@@ -48,7 +54,9 @@ async function getDocuments(collectionName) {
 async function addDocument(collectionName, uniqueId, data) {
   await setDoc(doc(db, collectionName, uniqueId), data);
 }
-
+async function removeDocument(collectionName, uniqueId) {
+  await deleteDoc(doc(db, collectionName, uniqueId));
+}
 async function updateDocument(keys, values, collectionName, id) {
   const docRef = doc(db, collectionName, id);
   const docSnapshot = await getDoc(docRef);
