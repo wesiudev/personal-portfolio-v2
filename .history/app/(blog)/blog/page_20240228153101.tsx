@@ -4,26 +4,26 @@ import Image from "next/image";
 import StarsBg from "@/components/StarsBg";
 import Footer from "@/components/Footer";
 
-// async function getPost(url: string, blogType?: string) {
-//   const res = await fetch(
-//     `${process.env.NEXT_PUBLIC_SITE_URL}/api/blog?url=${url}&secret=${process.env.API_SECRET_KEY}`,
-//     { next: { revalidate: 180 } }
-//   );
-//   if (!res) {
-//     throw new Error("Failed to fetch data");
-//   }
-//   const post = res.json();
-//   return post;
-// }
+async function getPost(url: string, blogType?: string) {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_SITE_URL}/api/blog?url=${url}&secret=${process.env.API_SECRET_KEY}`,
+    { next: { revalidate: 180 } }
+  );
+  if (!res) {
+    throw new Error("Failed to fetch data");
+  }
+  const post = res.json();
+  return post;
+}
 
-// async function getBlogData() {
-//   const req = await fetch(
-//     `${process.env.NEXT_PUBLIC_SITE_URL}/api/blog?secret=${process.env.API_SECRET_KEY}`,
-//     { next: { revalidate: 30 } }
-//   );
-//   const posts = req.json();
-//   return posts;
-// }
+async function getBlogData() {
+  const req = await fetch(
+    `${process.env.NEXT_PUBLIC_SITE_URL}/api/blog?secret=${process.env.API_SECRET_KEY}`,
+    { next: { revalidate: 30 } }
+  );
+  const posts = req.json();
+  return posts;
+}
 export default async function Page() {
   // const { posts } = await getBlogData();
   return (
