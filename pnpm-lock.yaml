@@ -139,9 +139,15 @@ devDependencies:
   '@types/draft-js':
     specifier: ^0.11.17
     version: 0.11.17
+  '@types/draftjs-to-html':
+    specifier: ^0.8.4
+    version: 0.8.4
   '@types/negotiator':
     specifier: 0.6.1
     version: 0.6.1
+  '@types/react-draft-wysiwyg':
+    specifier: ^1.13.8
+    version: 1.13.8
   '@types/uuid':
     specifier: ^9.0.8
     version: 9.0.8
@@ -1111,6 +1117,12 @@ packages:
       immutable: 3.7.6
     dev: true
 
+  /@types/draftjs-to-html@0.8.4:
+    resolution: {integrity: sha512-5FZcjFoJL57N/IttLCTCNI0krX+181oCl5hf76u3TqPkqBAphHrJAO9ReYesx9138kcObaYmpnWC2Yrqxoqd2Q==}
+    dependencies:
+      '@types/draft-js': 0.11.17
+    dev: true
+
   /@types/eslint-scope@3.7.7:
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
     dependencies:
@@ -1168,6 +1180,13 @@ packages:
     dependencies:
       '@types/react': 18.2.12
     dev: false
+
+  /@types/react-draft-wysiwyg@1.13.8:
+    resolution: {integrity: sha512-qo0vIHjqAYq3Hz93Td3ecNodgVjKsvrWkBJ6mZXJSUmQzrQ5Fu7NS9oV5PXnVbnuqPoJLALbCSiz8UCksLribg==}
+    dependencies:
+      '@types/draft-js': 0.11.17
+      '@types/react': 18.2.12
+    dev: true
 
   /@types/react-reconciler@0.26.7:
     resolution: {integrity: sha512-mBDYl8x+oyPX/VBb3E638N0B7xG+SPk/EAMcVPeexqus/5aTpTphQi0curhhshOqRrc9t6OPoJfEUkbymse/lQ==}

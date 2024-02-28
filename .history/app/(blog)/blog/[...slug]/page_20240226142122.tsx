@@ -1,8 +1,9 @@
 import Link from "next/link";
 import moment from "moment";
 import "moment/locale/pl";
+import Image from "next/image";
 import { Post } from "@/types";
-import { getBlogPosts } from "@/firebase";
+import { getBlogPosts, getDocuments } from "@/firebase";
 import { renderMarkdown } from "@/utils/parseMarkdown";
 import ScrollTo from "@/components/ScrollTo";
 import { polishToEnglish } from "@/utils/polishToEnglish";
