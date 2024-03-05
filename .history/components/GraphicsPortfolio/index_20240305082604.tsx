@@ -158,10 +158,11 @@ const GraphicsPortfolio: React.FC = () => {
           translateX: h1TextTranslateX,
           translateY: h1TextTranslateY,
         }}
-        className="font-bold text-[22px] sm:text-5xl lg:text-7xl xl:text-8xl bottom-36 left-0 fixed z-[500] font-sans"
+        className="font-bold text-[40px] sm:text-5xl lg:text-7xl xl:text-8xl bottom-36 left-0 fixed z-[500] font-sans"
       >
         <div className="bg-yellow-300 px-6 box-decoration-clone shadow-lg shadow-black select-none w-max">
-          Hi, I'm wesiudev
+          Hi,
+          <br className="sm:hidden" /> I'm wesiudev
         </div>
       </motionDiv.h2>
       <motionDiv.h2
@@ -172,7 +173,7 @@ const GraphicsPortfolio: React.FC = () => {
         }}
         className="font-bold top-36 left-[-30px] sm:left-0 fixed z-[500] font-sans"
       >
-        <div className="bg-yellow-300 select-none shadow-lg shadow-black px-6 box-decoration-clone text-[26px] sm:text-[5xl] lg:text-7xl xl:text-8xl w-max">
+        <div className="bg-yellow-300 select-none shadow-lg shadow-black px-6 box-decoration-clone text-[38px] sm:text-[5xl] lg:text-7xl xl:text-8xl w-max">
           Creative Developer
         </div>
       </motionDiv.h2>
@@ -184,7 +185,7 @@ const GraphicsPortfolio: React.FC = () => {
         }}
         className="font-bold bottom-36 text-center w-[90%] md:w-[70%] lg:w-[60%] left-1/2 fixed z-[500] font-sans"
       >
-        <div className="bg-yellow-300 shadow-lg shadow-black select-none px-6 box-decoration-clone text-[16px] sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+        <div className="bg-yellow-300 shadow-lg shadow-black select-none px-6 box-decoration-clone text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           I have expertise in JavaScript programming and a desire to learn 3D
           graphics.
         </div>

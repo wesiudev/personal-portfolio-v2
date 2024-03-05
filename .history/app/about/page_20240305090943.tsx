@@ -20,7 +20,7 @@ export default function Page() {
       <StarsBg />
       <Link
         href="/"
-        className="fixed left-6 lg:left-12 top-12 z-[1000] flex flex-row items-center justify-center"
+        className="fixed left-6 lg:left-12 top-12 z-[550] flex flex-row items-center justify-center"
       >
         <h2 className="italic font-bold text-2xl text-white drop-shadow-md shadow-black">
           wesiu.

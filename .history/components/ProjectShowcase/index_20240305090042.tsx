@@ -55,7 +55,7 @@ export default function ProjectShowcase() {
               <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-3 h-max">
                 <ProjectImages images={item.images} />
                 <div
-                  className="z-[504] mt-4 lg:mt-0 text-white bg-slate-800 overflow-hidden rounded-xl min-h-full"
+                  className="mt-4 lg:mt-0 text-white bg-slate-800 overflow-hidden rounded-xl min-h-full"
                   style={{
                     boxShadow: "0px 0px 6px black",
                   }}
@@ -77,7 +77,9 @@ export default function ProjectShowcase() {
                       {item.colors.map((color: any, i: number) => (
                         <li
                           key={i}
-                          className={`flex flex-row items-center ml-2 lg:ml-4 flex-wrap my-3`}
+                          className={`flex flex-row items-center ml-2 lg:ml-4 flex-wrap ${
+                            i !== 2 && "my-3"
+                          }`}
                         >
                           <div
                             style={{ background: `${color}` }}

@@ -46,7 +46,7 @@ export default function ProjectShowcase() {
             Projects Showcase
           </motionDiv.h2>
         </motionDiv.div>
-        <div className="z-auto top-0 w-screen flex flex-col">
+        <div className="z-[504] top-0 w-screen flex flex-col ">
           {projects.map((item: any, i: any) => (
             <div
               key={i}
@@ -55,7 +55,7 @@ export default function ProjectShowcase() {
               <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-3 h-max">
                 <ProjectImages images={item.images} />
                 <div
-                  className="z-[504] mt-4 lg:mt-0 text-white bg-slate-800 overflow-hidden rounded-xl min-h-full"
+                  className="mt-4 lg:mt-0 text-white bg-slate-800 overflow-hidden rounded-xl min-h-full"
                   style={{
                     boxShadow: "0px 0px 6px black",
                   }}
@@ -73,11 +73,11 @@ export default function ProjectShowcase() {
                     <h2 className="shadow-sm shadow-black -ml-3 px-3 bg-yellow-300 rounded-br-2xl w-max text-zinc-800 font-anta text-lg lg:text-xl xl:text-2xl mt-3 lg:mt-1.5 xl:mt-3">
                       Colors
                     </h2>
-                    <div className="-ml-3 z-50 h-max flex flex-row flex-wrap lg:-ml-4 mt-3 pl-2 pr-6 bg-gray-300 bg-opacity-20">
+                    <div className="-ml-3 z-50 h-max flex flex-row flex-wrap lg:-ml-4 mt-3 p-2 pr-6 space-y-3 bg-gray-300 bg-opacity-20">
                       {item.colors.map((color: any, i: number) => (
                         <li
                           key={i}
-                          className={`flex flex-row items-center ml-2 lg:ml-4 flex-wrap my-3`}
+                          className="flex flex-row items-center ml-2 lg:ml-4 flex-wrap"
                         >
                           <div
                             style={{ background: `${color}` }}

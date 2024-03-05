@@ -10,18 +10,10 @@ export default function ProjectImages({ images }: { images: any }) {
       <div className={`${isImageCollectionOpen ? "block" : "hidden"}`}></div>
       <div
         onClick={() => setImageCollectionOpen(!isImageCollectionOpen)}
-        className={`bg-black w-full h-full ${
-          isImageCollectionOpen
-            ? "fixed top-0 left-0 bg-opacity-80 duration-500 z-[505]"
-            : "fixed z-[-100] bg-opacity-0"
-        }`}
-      ></div>
-      <div
-        onClick={() => setImageCollectionOpen(!isImageCollectionOpen)}
         className={`flex flex-col ${
           isImageCollectionOpen
-            ? "fixed left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 rotate-90 w-[150vw] sm:rotate-0 sm:w-3/4 !z-[2000] sm:items-center sm:justify-center"
-            : "z-[504]"
+            ? "fixed left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 rotate-90 w-[150vw] sm:rotate-0 sm:w-auto sm:h-[100%] z-[2000]"
+            : ""
         } duration-500 sm:duration-0`}
       >
         <div className="relative h-max">

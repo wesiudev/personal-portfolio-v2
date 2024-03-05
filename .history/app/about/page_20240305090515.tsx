@@ -20,7 +20,7 @@ export default function Page() {
       <StarsBg />
       <Link
         href="/"
-        className="fixed left-6 lg:left-12 top-12 z-[1000] flex flex-row items-center justify-center"
+        className="fixed left-6 lg:left-12 top-12 z-[550] flex flex-row items-center justify-center"
       >
         <h2 className="italic font-bold text-2xl text-white drop-shadow-md shadow-black">
           wesiu.
@@ -108,7 +108,8 @@ export default function Page() {
                 </li>
                 <li className="relative ml-4 mt-2">
                   <div className="absolute top-2 w-2 h-2 bg-white rounded-full left-0 -translate-x-[150%]"></div>
-                  Exploring the field of game development.
+                  Exploring the exhilarating realm of game development, finding
+                  excitement in the creation process.
                 </li>
                 <li className="relative ml-4 mt-2">
                   <div className="absolute top-2 w-2 h-2 bg-white rounded-full left-0 -translate-x-[150%]"></div>
@@ -202,8 +203,8 @@ const RoadmapItem = ({
     <div
       className={`absolute top-[50%] -translate-y-[50%] ${
         alignLeft
-          ? "md:-right-[41px] md:left-auto -left-[42px]"
-          : "-left-[41px]"
+          ? "md:-right-[44px] md:left-auto -left-[42px]"
+          : "-left-[42px]"
       } h-1 w-10 bg-yellow-300`}
     ></div>
     <div
@@ -224,7 +225,7 @@ const RoadmapItem = ({
         {item.title}
       </h2>
     </div>
-    <p className="p-3 text-sm sm:text-base">{item.description}</p>
+    <p className="p-3">{item.description}</p>
   </div>
 );
 

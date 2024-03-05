@@ -27,7 +27,7 @@ export function NavRight() {
         >
           <div className="relative group-hover:text-white duration-200 ">
             <div className="absolute -left-[120%] group-hover:-left-0 duration-300 ease-in-out top-0 h-full w-full bg-yellow-300"></div>
-            <div className="xl:text-lg z-[50] relative font-light bg-black bg-opacity-30 group-hover:bg-opacity-0 duration-300 group-hover:text-black px-2">
+            <div className="text-sm sm:text-base xl:text-lg z-[50] relative font-light bg-black bg-opacity-30 group-hover:bg-opacity-0 duration-300 group-hover:text-black px-2">
               Portfolio
             </div>
           </div>
@@ -42,7 +42,7 @@ export function NavRight() {
         >
           <div className="relative group-hover:text-white duration-200 ">
             <div className="absolute -left-[120%] group-hover:-left-0 duration-300 ease-in-out top-0 h-full w-full bg-yellow-300"></div>
-            <div className="z-[50] relative font-light bg-black bg-opacity-30 group-hover:bg-opacity-0 duration-300 group-hover:text-black px-2">
+            <div className="text-sm sm:text-base z-[50] relative font-light bg-black bg-opacity-30 group-hover:bg-opacity-0 duration-300 group-hover:text-black px-2">
               Portfolio
             </div>
           </div>
@@ -56,7 +56,7 @@ export function NavRight() {
       >
         <div className="relative group-hover:text-white duration-200 ">
           <div className="absolute -left-[120%] group-hover:-left-0 duration-300 ease-in-out top-0 h-full w-full bg-yellow-300"></div>
-          <div className="z-[50] relative font-light bg-black bg-opacity-30 group-hover:bg-opacity-0 duration-300 group-hover:text-black px-2">
+          <div className="text-sm sm:text-base z-[50] relative font-light bg-black bg-opacity-30 group-hover:bg-opacity-0 duration-300 group-hover:text-black px-2">
             About
           </div>
         </div>

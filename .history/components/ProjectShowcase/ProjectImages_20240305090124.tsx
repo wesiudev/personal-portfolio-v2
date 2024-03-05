@@ -12,8 +12,8 @@ export default function ProjectImages({ images }: { images: any }) {
         onClick={() => setImageCollectionOpen(!isImageCollectionOpen)}
         className={`bg-black w-full h-full ${
           isImageCollectionOpen
-            ? "fixed top-0 left-0 bg-opacity-80 duration-500 z-[505]"
-            : "fixed z-[-100] bg-opacity-0"
+            ? "block fixed top-0 left-0 bg-opacity-80 duration-500 z-[505]"
+            : "hidden bg-opacity-0"
         }`}
       ></div>
       <div
