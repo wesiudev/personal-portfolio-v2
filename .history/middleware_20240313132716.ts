@@ -15,11 +15,7 @@ function getLocale(request: NextRequest): string | undefined {
   let languages = new Negotiator({ headers: negotiatorHeaders }).languages();
   // @ts-ignore locales are readonly
   const locales: string[] = i18n.locales;
-  const bestLocale = matchLocale(languages, locales, i18n.defaultLocale);
-  if (!bestLocale) {
-    return undefined;
-  }
-  return `/${bestLocale}`;
+  return matchLocale(languages, locales, i18n.defaultLocale);
 }
 
 export function middleware(request: NextRequest) {
@@ -44,18 +40,14 @@ export function middleware(request: NextRequest) {
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
-    if (!locale) {
-      return;
-    }
 
     // The new URL is now /en-US/products
-    const newPathname = `${locale}${pathname.replace(/^\/+/, "")}`;
-    return NextResponse.redirect(new URL(newPathname, request.url));
+    return NextResponse.redirect(new URL(`${locale}${pathname}`, request.url));
   }
 }
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/public/assets|images|_ipx|_next/_ipx|_next/image|assets|favicon.ico|sw.js).*)",
+    "/((?!api|_next/static|_next/public/assets|images|_ipx|_next/_ipx|_ipx/w_640,q_75|_next/_ipx/w_640,q_75|_next/image|assets|favicon.ico|sw.js).*)",
   ],
 };
