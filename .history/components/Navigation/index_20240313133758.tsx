@@ -14,7 +14,7 @@ export function NavRight({ dictionary, lang }: { dictionary: any; lang: any }) {
     });
   }, []);
   return (
-    <div className="text-white fixed right-6 sm:right-12 bottom-12 sm:bottom-auto sm:top-12 flex flex-row space-x-3 z-[1000] font-regular text-xl font-anta">
+    <div className="text-gray-300 fixed right-6 sm:right-12 bottom-0 sm:bottom-auto sm:top-12 flex flex-row space-x-3 z-[1000] font-regular text-xl font-anta">
       <ScrollTo
         to="projects"
         smooth={true}
