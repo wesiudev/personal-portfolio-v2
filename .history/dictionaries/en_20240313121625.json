@@ -1,0 +1,185 @@
+{
+  "HomePage": {
+    "h2Text": "I code in JavaScript and I'm interested in 3D graphics.",
+    "projectShowcase": "Projects Showcase",
+    "hi": "Hi, I'm wesiudev",
+    "dev": "Creative Developer",
+    "projects": [
+      {
+        "name": "Blackbell Art",
+        "shortDescription": "Web application for an artist. Shop with artworks, tattoo offer.",
+        "images": [
+          "/images/projects/blackbellart/hero.webp",
+          "/images/projects/blackbellart/shop.webp",
+          "/images/projects/blackbellart/shopItem.webp",
+          "/images/projects/blackbellart/tattooBlog.webp",
+          "/images/projects/blackbellart/tattoos.webp",
+          "/images/projects/blackbellart/contact.webp"
+        ],
+        "link": "https://www.blackbellart.com/",
+        "type": "Online Shop",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Next",
+          "Redux",
+          "Stripe",
+          "Firebase",
+          "Tailwind",
+          "ThreeJS",
+          "PWA"
+        ],
+        "colors": ["#252326", "#8F26F3", "#22C55E"],
+        "fonts": [
+          {
+            "fontName": "CocoSharp",
+            "variants": ["regular", "bold", "light", "italic"]
+          },
+          {
+            "fontName": "Gilroy",
+            "variants": ["regular"]
+          },
+          {
+            "fontName": "GraublauWeb",
+            "variants": ["regular", "bold"]
+          }
+        ],
+        "sourceCode": "https://github.com/wesiudev/art-tattoo"
+      },
+      {
+        "name": "Manicure Grudziądz",
+        "shortDescription": "Website dedicated to manicure services, where you can book appointments, and earn discounts by referring friends.",
+        "images": [
+          "/images/projects/manicuregrudziadz/hero.webp",
+          "/images/projects/manicuregrudziadz/dashboard.webp",
+          "/images/projects/manicuregrudziadz/rezerwacje.webp"
+        ],
+        "link": "https://www.manicuregrudziadz.pl/",
+        "type": "Full-stack Application",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Next",
+          "Redux",
+          "Firebase",
+          "Tailwind"
+        ],
+        "colors": ["#3F3F46", "#FACC15", "#4F46E5"],
+        "fonts": [
+          {
+            "fontName": "CocoSharp",
+            "variants": ["light", "light italic", "regular", "bold"]
+          }
+        ],
+        "sourceCode": "https://github.com/wesiudev/manicuregrudziadz"
+      },
+      {
+        "name": "Quixy",
+        "shortDescription": "Quixy is a website that offers a variety of web development services. With a focus on UI/UX, SEO, and accessibility.",
+        "images": [
+          "/images/projects/quixy/hero.webp",
+          "/images/projects/quixy/quixyPortfolio.webp",
+          "/images/projects/quixy/quixyPortfolio2.webp",
+          "/images/projects/quixy/quixyItem.webp"
+        ],
+        "link": "https://www.quixy.pl/",
+        "type": "Front-end with a simple database",
+        "technologies": ["React", "Next", "Tailwind", "Firebase"],
+        "colors": ["#DBA61A", "#4ADE80", "#212121"],
+        "fonts": [
+          {
+            "fontName": "CocoSharp",
+            "variants": ["light", "light italic", "regular", "bold"]
+          }
+        ],
+        "sourceCode": "https://github.com/wesiudev/quixy"
+      },
+      {
+        "name": "Fryzury Kamińska",
+        "shortDescription": "Business card website for a hairdresser. Portfolio, services, contact.",
+        "images": [
+          "/images/projects/fryzurykaminska/hero.webp",
+          "/images/projects/fryzurykaminska/offer.webp"
+        ],
+        "link": "https://www.fryzurykaminska.pl/",
+        "type": "Front-end with a simple database",
+        "technologies": ["React", "Next"],
+        "colors": ["#22C55E", "#F3F4F6", "#93C5FD"],
+        "fonts": [
+          {
+            "fontName": "CocoSharp",
+            "variants": ["regular", "bold"]
+          }
+        ],
+        "sourceCode": "https://github.com/wesiudev/fryzury-kaminska"
+      },
+      {
+        "name": "Kancelaria Deluga",
+        "shortDescription": "Business card website for a legal advisor. Contact, Services.",
+        "images": [
+          "/images/projects/kancelariadeluga/hero.webp",
+          "/images/projects/kancelariadeluga/offer.webp"
+        ],
+        "link": "https://www.delugakancelaria.pl/",
+        "type": "Front-end with a simple database",
+        "technologies": ["React", "Next", "Firebase"],
+        "colors": ["#685A50", "#4ADE80", "#D8B4FE"],
+        "fonts": [
+          {
+            "fontName": "CocoSharp",
+            "variants": ["regular", "bold"]
+          }
+        ],
+        "sourceCode": "https://github.com/wesiudev/kancelaria-artur-deluga"
+      }
+    ],
+    "colors": "Colors",
+    "stack": "Stack",
+    "fonts": "Fonts",
+    "source": "Source Code",
+    "visit": "Visit Website",
+    "about": "About me",
+    "timeline": [
+      {
+        "year": 2015,
+        "title": "IT school",
+        "description": "Began studying computer science at a technical high school"
+      },
+      {
+        "year": 2017,
+        "title": "First Website",
+        "description": "In 2017 I created my first primitive website using HTML, CSS and JavaScript"
+      },
+      {
+        "year": 2020,
+        "title": "Focus on PHP",
+        "description": "After passing my exams, I Focused on PHP and created my first project, which included a payment system."
+      },
+      {
+        "year": 2021,
+        "title": "Discovery of React",
+        "description": "I decided to explore coding further, concentrating on a JavaScript library - React."
+      },
+      {
+        "year": 2022,
+        "title": "Encounter with Mentor",
+        "description": "Met my mentor, an experienced professional who reviewed my code and presented exciting challenges."
+      },
+      {
+        "year": 2023,
+        "title": "Creating projects",
+        "description": "This year was a big step forward. I've learned a lot and created a collection of projects."
+      }
+    ],
+    "motivation": "Motivation to code",
+    "logic": "Logic",
+    "logicDesc": "I am captivated by the logic of applications and the optimization process. Designing and implementing new features excites me, and I am constantly driven to innovate.",
+    "learning": "Learning",
+    "learningDesc": "My passion for programming fuels my desire for continuous growth, and I actively pursue opportunities to further develop my skills.",
+    "visualization": "Visualization",
+    "visualizationDesc": "I find immense satisfaction in working with data that I can visualize. Observing the flow of information between the components I create is a source of great fascination for me.",
+    "story": "My Story",
+    "storyDesc": "When I used to look at games or web applications, I often wondered, 'How is this made? Is it difficult to achieve?' I always wanted to find the answers to these questions. While working at the warehouse, I had a desire to grow, so after work, I would fire up my development environment and tinker with code, exploring newer technologies and solutions. Fortunately, that curiosity still accompanies me today. Now, as I seek opportunities as a front-end developer, I continue to pursue my other passions alongside.",
+    "plans": "Future Plans"
+  }
+}
