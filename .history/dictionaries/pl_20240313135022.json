@@ -47,30 +47,6 @@
         "sourceCode": "https://github.com/wesiudev/art-tattoo"
       },
       {
-        "name": "Zaklejki",
-        "shortDescription": "Sklep internetowy z kolekcją ponad 2000 ręcznie wycinanych naklejkami.",
-        "images": [
-          "/images/projects/zaklejki/hero.webp",
-          "/images/projects/zaklejki/shop.webp",
-          "/images/projects/zaklejki/product.webp"
-        ],
-        "link": "https://www.zaklejki.pl/",
-        "type": "Sklep Online",
-        "technologies": ["React", "Next", "Firebase", "Python", "Web Scraping"],
-        "colors": ["#F389EC", "#FFFFFF", "#4338CA"],
-        "fonts": [
-          {
-            "fontName": "Inter",
-            "variants": ["regular", "bold"]
-          },
-          {
-            "fontName": "Druk-wide",
-            "variants": ["bold"]
-          }
-        ],
-        "sourceCode": "https://github.com/wesiudev/zaklejki"
-      },
-      {
         "name": "Manicure Grudziądz",
         "shortDescription": "Strona dedykowana usługom manicure, gdzie mozna zarezerwować terminy, i otrzymać rabaty za zapraszanie znajomych. ",
         "images": [
@@ -155,6 +131,29 @@
           }
         ],
         "sourceCode": "https://github.com/wesiudev/kancelaria-artur-deluga"
+      },
+      {
+        "name": "Zaklejki",
+        "shortDescription": "Sklep internetowy z ręcznie wycinanymi naklejkami.",
+        "images": [
+          "/images/projects/kancelariadeluga/hero.webp",
+          "/images/projects/kancelariadeluga/offer.webp"
+        ],
+        "link": "https://www.delugakancelaria.pl/",
+        "type": "Sklep Online",
+        "technologies": ["React", "Next", "Firebase", "Python", "Web Scraping"],
+        "colors": ["#685A50", "#4ADE80", "#D8B4FE"],
+        "fonts": [
+          {
+            "fontName": "Inter",
+            "variants": ["regular", "bold"]
+          },
+          {
+            "fontName": "Druk-wide",
+            "variants": ["bold"]
+          }
+        ],
+        "sourceCode": "https://github.com/wesiudev/zaklejki"
       }
     ],
     "colors": "Kolory",
