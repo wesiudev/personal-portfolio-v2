@@ -1,6 +1,6 @@
 ![wesiudev4](https://github.com/user-attachments/assets/f9bc6ac9-895e-45db-88e5-97b94c48d21f)
 
-[wesiudev.netlify.app](wesiudev.netlify.app)
+[wesiudev.netlify.app](https://wesiudev.netlify.app)
 
 
 # portfolio wesiu.dev
