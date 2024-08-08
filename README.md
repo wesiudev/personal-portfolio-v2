@@ -1,8 +1,12 @@
+![wesiudev4](https://github.com/user-attachments/assets/f9bc6ac9-895e-45db-88e5-97b94c48d21f)
+
 [wesiudev.netlify.app](https://wesiu.dev)
+
+
 # portfolio wesiu.dev
 
 ## Nextjs, Framer Motion, AOS, ThreeJS, Tailwindcss
-![image](https://github.com/user-attachments/assets/eef09fa8-e8df-4316-9363-26ea7aa91b74)
+
 delete package-lock.json
 
 # install dependencies
