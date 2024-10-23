@@ -46,7 +46,7 @@ export default async function Root({
   params,
 }: {
   children: React.ReactNode;
-  params: any;
+  params: { lang: Locale };
 }) {
   const dictionary = await getDictionary(params.lang);
   return (
