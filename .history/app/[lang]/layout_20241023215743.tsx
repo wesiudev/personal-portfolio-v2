@@ -9,9 +9,7 @@ import Script from "next/script";
 import { Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 export const metadata: Metadata = {
-  title: "wesiudev.com | Front-end Developer Paweł Wessel - Portfolio",
-  description:
-    "Tworzę strony i aplikacje internetowe, sklepy internetowy, prowdzę marketing w Google Ads. Zajmuję się projektowaniem graficznym i designem.",
+  title: "Front-end Developer Paweł Wessel - Portfolio - wesiudev.com",
   icons: [
     {
       url: "/favicon.ico",
@@ -22,24 +20,31 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: `https://wesiudev.com/`,
-    title: "wesiudev.com | Front-end Developer Paweł Wessel - Portfolio",
-    description:
-      "Tworzę strony i aplikacje internetowe, sklepy internetowy, prowdzę marketing w Google Ads. Zajmuję się projektowaniem graficznym i designem.",
-    siteName: "WESIUDEV.COM",
+    title: "Front-end Developer Paweł Wessel - Portfolio - wesiudev.com",
+    description: "Wspieramy Rolników i osoby pracujące na rzecz Rolnictwa. Dbamy o ochronę godności, praw i interesów materialnych. Nie pozwólmy o upadek Polskiego sektora rolnictwa.",
+    siteName: "ZZRPWiS",
     images: [
       {
-        url: "/ponczek.png",
+        url: ,
         type: "image/png",
       },
     ],
   },
   twitter: {
-    site: "@wesiudev",
-    title: "wesiudev.com | Front-end Developer Paweł Wessel - Portfolio",
-    description:
-      "Tworzę strony i aplikacje internetowe, sklepy internetowy, prowdzę marketing w Google Ads. Zajmuję się projektowaniem graficznym i designem.",
-    images: [{ url: "/ponczek.png", type: "image/png" }],
+    cardType: "summary_large_image",
+    site: "@ZZRPWiS",
+    title: product?.metaTitle,
+    description: product?.metaDescription,
+    image: {
+      url: product.primaryImage,
+    },
   },
+  meta: [
+    {
+      name: "theme-color",
+      content: "#ffffff", // replace with your desired theme color
+    },
+  ],
 };
 export default async function Root({
   children,

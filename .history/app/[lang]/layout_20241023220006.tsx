@@ -10,8 +10,6 @@ import { Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 export const metadata: Metadata = {
   title: "wesiudev.com | Front-end Developer Paweł Wessel - Portfolio",
-  description:
-    "Tworzę strony i aplikacje internetowe, sklepy internetowy, prowdzę marketing w Google Ads. Zajmuję się projektowaniem graficznym i designem.",
   icons: [
     {
       url: "/favicon.ico",
@@ -23,9 +21,8 @@ export const metadata: Metadata = {
     type: "website",
     url: `https://wesiudev.com/`,
     title: "wesiudev.com | Front-end Developer Paweł Wessel - Portfolio",
-    description:
-      "Tworzę strony i aplikacje internetowe, sklepy internetowy, prowdzę marketing w Google Ads. Zajmuję się projektowaniem graficznym i designem.",
-    siteName: "WESIUDEV.COM",
+    description: "Wspieramy Rolników i osoby pracujące na rzecz Rolnictwa. Dbamy o ochronę godności, praw i interesów materialnych. Nie pozwólmy o upadek Polskiego sektora rolnictwa.",
+    siteName: "ZZRPWiS",
     images: [
       {
         url: "/ponczek.png",
@@ -36,10 +33,18 @@ export const metadata: Metadata = {
   twitter: {
     site: "@wesiudev",
     title: "wesiudev.com | Front-end Developer Paweł Wessel - Portfolio",
-    description:
-      "Tworzę strony i aplikacje internetowe, sklepy internetowy, prowdzę marketing w Google Ads. Zajmuję się projektowaniem graficznym i designem.",
-    images: [{ url: "/ponczek.png", type: "image/png" }],
+    description: product?.metaDescription,
+    images: [
+      {url: "/ponczek.png" , type: "image/png"},
+    ]
+    },
   },
+  meta: [
+    {
+      name: "theme-color",
+      content: "#ffffff", // replace with your desired theme color
+    },
+  ],
 };
 export default async function Root({
   children,
