@@ -1,12 +1,12 @@
-import IndexPage from "@/components/IndexPage";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
+import Content from "./Content";
 
-export default async function Page({ params }: { params: any }) {
+export default async function Page({ params }: { params: { lang: any } }) {
   const dictionary = await getDictionary(params.lang);
   return (
     <div>
-      <IndexPage dictionary={dictionary} />
+      <Content dictionary={dictionary} lang={params.lang} />
     </div>
   );
 }
