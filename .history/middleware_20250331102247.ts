@@ -21,6 +21,8 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const PUBLIC_FILE = /^\/public\//;
+
+  // Ignore files in the public folder and specific public files like robots.txt
   if (
     PUBLIC_FILE.test(pathname) ||
     [
@@ -28,6 +30,7 @@ export function middleware(request: NextRequest) {
       "/favicon.ico",
       "/robots.txt",
       "/public/assets/*",
+      // Your other files in `public`
     ].includes(pathname)
   ) {
     return;
